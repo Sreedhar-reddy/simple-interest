@@ -231,7 +231,7 @@ const InterestPage = () => {
                     className="form-control"
                     placeholder="from date"
                     dateFormat="dd/MM/yyyy"
-                    closeOnScroll={true}
+                    closeOnScroll={false}
                     selected={fromDate.value}
                     maxDate={new Date()}
                     showMonthDropdown
@@ -253,7 +253,7 @@ const InterestPage = () => {
                     className="form-control"
                     placeholder="to date"
                     dateFormat="dd/MM/yyyy"
-                    closeOnScroll={true}
+                    closeOnScroll={false}
                     selected={toDate.value}
                     minDate={fromDate.value}
                     showMonthDropdown
