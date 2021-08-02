@@ -1,0 +1,337 @@
+const TransferInitiationState = {
+  chooseTransferType: {
+    col1: {
+      type: "label",
+      value: "Transfer Type",
+      width: "2",
+    },
+    col2: {
+      type: "select",
+      width: "8",
+      value: "one",
+      options: {
+        one: "One",
+        two: "Two",
+      },
+      onChange: true,
+      changeHandler: {
+        type: "FILTER_TRANSFER",
+        objKey: "chooseTransferType",
+        colKey: "col2",
+        valKey: "value",
+      },
+    },
+  },
+  employeeType: {
+    col1: {
+      type: "label",
+      value: "Employee Type",
+      width: "2",
+    },
+    col2: {
+      type: "search",
+      placeholder: "search employee",
+      width: "8",
+      value: "",
+      searchValue: "",
+      onChange: true,
+      changeHandler: {
+        type: "SEARCH_INPUT",
+        objKey: "employeeType",
+        colKey: "col2",
+        valKey: "value",
+      },
+      onClick: true,
+      clickHandler: {
+        type: "SEARCH_EMPLOYEE",
+        objKey: "employeeType",
+        colKey: "col2",
+        valKey: "searchValue",
+      },
+    },
+  },
+  transferInitiationHeader: {
+    col1: {
+      type: "text",
+      value: "Current",
+      class: "font-weight-bold my-2",
+      span: "3",
+      offset: "2",
+    },
+    col2: {
+      type: "text",
+      value: "New",
+      class: "font-weight-bold my-2",
+      span: "3",
+      offset: "2",
+    },
+  },
+  transferInitiationDept: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Department",
+    },
+    col2: {
+      type: "text",
+      width: "3",
+      value: "Retail",
+      class: "text-primary",
+    },
+    col3: {
+      type: "select",
+      span: "3",
+      offset: "2",
+      value: "production",
+      elmClass: "text-primary",
+      options: {
+        production: "Production",
+        staging: "Staging",
+      },
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_DEPT",
+        objKey: "transferInitiationDept",
+        colKey: "col3",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationPosition: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Position",
+    },
+    col2: {
+      type: "text",
+      width: "3",
+      value: "Sports Leader",
+      class: "text-primary",
+    },
+    col3: {
+      type: "select",
+      span: "3",
+      offset: "2",
+      value: "production team lead",
+      elmClass: "text-primary",
+      options: {
+        productionTeamLead: "production team lead",
+        stagingTeamLead: "Staging Team Lead",
+      },
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_POSITION",
+        objKey: "transferInitiationPosition",
+        colKey: "col3",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationCostCentre: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Cost Centre",
+    },
+    col2: {
+      type: "text",
+      width: "3",
+      value: "IN1058",
+      class: "text-primary",
+    },
+    col3: {
+      type: "select",
+      span: "3",
+      offset: "2",
+      value: "IN1058LK",
+      elmClass: "text-primary",
+      options: {
+        IN1058LK: "IN1058LK",
+        IN1058LH: "IN1058LH",
+      },
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_COST_CENTRE",
+        objKey: "transferInitiationCostCentre",
+        colKey: "col3",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationManager: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Manager",
+    },
+    col2: {
+      type: "text",
+      width: "3",
+      value: "Gerald Rakesh",
+      class: "text-primary",
+    },
+    col3: {
+      type: "select",
+      span: "3",
+      offset: "2",
+      value: "mohan",
+      elmClass: "text-primary",
+      options: {
+        mohan: "Mohan Raj",
+        sreedhar: "Sreedhar",
+      },
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_INITIATION_MANAGET",
+        objKey: "transferInitiationManager",
+        colKey: "col3",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationLocation: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Location",
+    },
+    col2: {
+      type: "text",
+      width: "3",
+      value: "Karnataka",
+      class: "text-primary",
+    },
+    col3: {
+      type: "select",
+      span: "3",
+      offset: "2",
+      value: "karnataka",
+      elmClass: "text-primary",
+      options: {
+        karnataka: "Karnataka",
+        goa: "Goa",
+      },
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_LOCATION",
+        objKey: "transferInitiationLocation",
+        colKey: "col3",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationFixedGross: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Fixed Gross",
+    },
+    col2: {
+      type: "text",
+      width: "3",
+      value: "15,000",
+      class: "text-primary",
+    },
+    col3: {
+      type: "textBox",
+      span: "3",
+      offset: "2",
+      placeholder: "20,000",
+      value: "20,000",
+      elmClass: "text-primary",
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_FIXED_GROSS",
+        objKey: "transferInitiationFixedGross",
+        colKey: "col3",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationPercent: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Bonus In Percent (Optional)",
+    },
+    col2: {
+      type: "textBox",
+      width: "3",
+      value: "5%",
+      elmId: "transferInitiationCurrentPercent",
+      elmClass: "text-primary",
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_CURRENT_PERCENT",
+        objKey: "transferInitiationPercent",
+        colKey: "col2",
+        valKey: "value",
+      },
+    },
+    col3: {
+      type: "text",
+      width: "2",
+      class: "pt-2",
+      value: "Relocation Bonus",
+    },
+    col4: {
+      type: "textBox",
+      width: "3",
+      placeholder: "300",
+      value: "300",
+      elmId: "transferInitiationBonus",
+      elmClass: "text-primary",
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_BONUS",
+        objKey: "transferInitiationPercent",
+        colKey: "col4",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationEffectiveDate: {
+    col1: {
+      type: "label",
+      width: "2",
+      value: "Effective Date",
+    },
+    col2: {
+      type: "date",
+      width: "3",
+      value: new Date(),
+      closeOnScroll: true,
+      dateFormat: "yyyy/MM/dd",
+      elmClass: "text-primary form-control",
+      onChange: true,
+      changeHandler: {
+        type: "CHANGE_EFFECTIVE_DATE",
+        objKey: "transferInitiationEffectiveDate",
+        colKey: "col2",
+        valKey: "value",
+      },
+    },
+  },
+  transferInitiationFooter: {
+    col1: {
+      type: "button",
+      variant: "primary",
+      value: "Save",
+      span: "2",
+      offset: "3",
+      elmClass: "btn-block",
+      class: "mt-4",
+    },
+    col2: {
+      type: "button",
+      variant: "primary",
+      value: "Generate Transfer Letter",
+      span: "3",
+      offset: "1",
+      class: "mt-4",
+    },
+  },
+};
+
+export default TransferInitiationState;

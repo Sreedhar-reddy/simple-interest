@@ -1,0 +1,45 @@
+const TransferPageState = {
+  transferType: {
+    posts: "Posts",
+    comments: "Comments",
+    albums: "Albums",
+    photos: "Photos",
+    todos: "Todos",
+    users: "Users",
+  },
+  search: "Search Data",
+  title: "Get Data",
+  btnText: "Initiate Transfer",
+  searchType: {
+    all: "All",
+    initiated: "Initiated",
+    rejected: "Rejected",
+    accepted: "Accepted",
+    pending: "Pending",
+  },
+  transferText: "users",
+  searchText: "",
+  statusText: "all",
+  searchInput: "",
+  loading: true,
+  errMsg: "",
+  apiBaseUrl: "https://jsonplaceholder.typicode.com/",
+  apiUrl: "https://jsonplaceholder.typicode.com/users",
+  usersTHead: {
+    id: "#",
+    name: "Name",
+    userName: "User Name",
+    email: "Email",
+    action: "Edit/View",
+  },
+  postsTHead: {
+    id: "#",
+    userId: "User Id",
+    title: "Title",
+    body: "Body",
+    action: "Edit/View",
+  },
+  tableBody: [],
+};
+
+export default TransferPageState;
