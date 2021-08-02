@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/simple-interest/static/css/main.3bba3f90.chunk.css",
-    "main.js": "/simple-interest/static/js/main.9f7e0ceb.chunk.js",
-    "main.js.map": "/simple-interest/static/js/main.9f7e0ceb.chunk.js.map",
+    "main.js": "/simple-interest/static/js/main.f7debcf5.chunk.js",
+    "main.js.map": "/simple-interest/static/js/main.f7debcf5.chunk.js.map",
     "runtime-main.js": "/simple-interest/static/js/runtime-main.aacb287b.js",
     "runtime-main.js.map": "/simple-interest/static/js/runtime-main.aacb287b.js.map",
     "static/css/2.740a7125.chunk.css": "/simple-interest/static/css/2.740a7125.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.740a7125.chunk.css",
     "static/js/2.d92fba4d.chunk.js",
     "static/css/main.3bba3f90.chunk.css",
-    "static/js/main.9f7e0ceb.chunk.js"
+    "static/js/main.f7debcf5.chunk.js"
   ]
 }
