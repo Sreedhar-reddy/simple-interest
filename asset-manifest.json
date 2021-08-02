@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/simple-interest/static/css/main.3bba3f90.chunk.css",
+    "main.js": "/simple-interest/static/js/main.9f7e0ceb.chunk.js",
+    "main.js.map": "/simple-interest/static/js/main.9f7e0ceb.chunk.js.map",
+    "runtime-main.js": "/simple-interest/static/js/runtime-main.aacb287b.js",
+    "runtime-main.js.map": "/simple-interest/static/js/runtime-main.aacb287b.js.map",
+    "static/css/2.740a7125.chunk.css": "/simple-interest/static/css/2.740a7125.chunk.css",
+    "static/js/2.d92fba4d.chunk.js": "/simple-interest/static/js/2.d92fba4d.chunk.js",
+    "static/js/2.d92fba4d.chunk.js.map": "/simple-interest/static/js/2.d92fba4d.chunk.js.map",
+    "static/js/3.da9fdb51.chunk.js": "/simple-interest/static/js/3.da9fdb51.chunk.js",
+    "static/js/3.da9fdb51.chunk.js.map": "/simple-interest/static/js/3.da9fdb51.chunk.js.map",
+    "index.html": "/simple-interest/index.html",
+    "static/css/2.740a7125.chunk.css.map": "/simple-interest/static/css/2.740a7125.chunk.css.map",
+    "static/css/main.3bba3f90.chunk.css.map": "/simple-interest/static/css/main.3bba3f90.chunk.css.map",
+    "static/js/2.d92fba4d.chunk.js.LICENSE.txt": "/simple-interest/static/js/2.d92fba4d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aacb287b.js",
+    "static/css/2.740a7125.chunk.css",
+    "static/js/2.d92fba4d.chunk.js",
+    "static/css/main.3bba3f90.chunk.css",
+    "static/js/main.9f7e0ceb.chunk.js"
+  ]
+}
